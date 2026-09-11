@@ -13,5 +13,9 @@ struct MDReaderApp: App {
         WindowGroup {
             ContentView()
         }
+        .defaultSize(width: 1100, height: 760)
+        .commands {
+            OpenDocumentCommands()
+        }
     }
 }

@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D10000000000000000000001 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = D10000000000000000000002 /* MarkdownUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10000000000000000000003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5E06763053CAB000BE9981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5E067D3053CAB000BE9981;
+			remoteInfo = MDReader;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CA5E067E3053CAB000BE9981 /* MDReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000000000000000000004 /* MDReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +31,23 @@
 			path = MDReader;
 			sourceTree = "<group>";
 		};
+		D10000000000000000000005 /* MDReaderTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MDReaderTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA5E067B3053CAB000BE9981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10000000000000000000001 /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000000000000000000006 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5E06803053CAB000BE9981 /* MDReader */,
+				D10000000000000000000005 /* MDReaderTests */,
 				CA5E067F3053CAB000BE9981 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5E067E3053CAB000BE9981 /* MDReader.app */,
+				D10000000000000000000004 /* MDReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +95,34 @@
 			);
 			name = MDReader;
 			packageProductDependencies = (
+				D10000000000000000000002 /* MarkdownUI */,
 			);
 			productName = MDReader;
 			productReference = CA5E067E3053CAB000BE9981 /* MDReader.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D10000000000000000000007 /* MDReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000000000000000000008 /* Build configuration list for PBXNativeTarget "MDReaderTests" */;
+			buildPhases = (
+				D10000000000000000000009 /* Sources */,
+				D10000000000000000000006 /* Frameworks */,
+				D1000000000000000000000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1000000000000000000000B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D10000000000000000000005 /* MDReaderTests */,
+			);
+			name = MDReaderTests;
+			packageProductDependencies = (
+			);
+			productName = MDReaderTests;
+			productReference = D10000000000000000000004 /* MDReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +137,10 @@
 					CA5E067D3053CAB000BE9981 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					D10000000000000000000007 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = CA5E067D3053CAB000BE9981;
+					};
 				};
 			};
 			buildConfigurationList = CA5E06793053CAB000BE9981 /* Build configuration list for PBXProject "MDReader" */;
@@ -94,18 +152,29 @@
 			);
 			mainGroup = CA5E06753053CAB000BE9981;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D1000000000000000000000C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA5E067F3053CAB000BE9981 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CA5E067D3053CAB000BE9981 /* MDReader */,
+				D10000000000000000000007 /* MDReaderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA5E067C3053CAB000BE9981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1000000000000000000000A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D10000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1000000000000000000000B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5E067D3053CAB000BE9981 /* MDReader */;
+			targetProxy = D10000000000000000000003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CA5E06883053CAB300BE9981 /* Debug */ = {
@@ -299,6 +383,38 @@
 			};
 			name = Release;
 		};
+		D1000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T984VYBRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langzhen.MDReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDReader.app/Contents/MacOS/MDReader";
+			};
+			name = Debug;
+		};
+		D1000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T984VYBRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langzhen.MDReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDReader.app/Contents/MacOS/MDReader";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -320,7 +436,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D10000000000000000000008 /* Build configuration list for PBXNativeTarget "MDReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1000000000000000000000D /* Debug */,
+				D1000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1000000000000000000000C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = exactVersion;
+				version = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10000000000000000000002 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1000000000000000000000C /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA5E06763053CAB000BE9981 /* Project object */;
 }
