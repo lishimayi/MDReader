@@ -1,0 +1,10 @@
+# Xcode build output
+build/
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+
+# macOS metadata
+.DS_Store
+
